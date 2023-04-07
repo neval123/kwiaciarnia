@@ -7,6 +7,7 @@ import com.example.application.views.addacustomer.AddacustomerView;
 import com.example.application.views.availableflowers.AvailableflowersView;
 import com.example.application.views.buyflowers.BuyflowersView;
 import com.example.application.views.history.HistoryView;
+import com.example.application.views.supply.SupplyView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -61,10 +62,10 @@ public class MainLayout extends AppLayout {
         nav.addClassNames("app-nav");
 
         nav.addItem(new AppNavItem("Add a customer", AddacustomerView.class, "la la-file"));
-        nav.addItem(new AppNavItem("Available flowers", AvailableflowersView.class, "la la-file"));
+        nav.addItem(new AppNavItem("Available flowers", AvailableflowersView.class, "la la-columns"));
         nav.addItem(new AppNavItem("History", HistoryView.class, "la la-address-card"));
         nav.addItem(new AppNavItem("Buy flowers", BuyflowersView.class, "la la-file"));
-
+        nav.addItem(new AppNavItem("Supply", SupplyView.class, "la la-file"));
         return nav;
     }
 
